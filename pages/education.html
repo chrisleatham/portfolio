@@ -1,0 +1,14 @@
+<div class='container' id='schoolDiv'>
+    <h1>Education</h1>
+    <h1>Related Classes</h1>
+    <div class='row' id='classes'>
+        <div ng-repeat='course in courseInfo' class='course col-xs-6 col-sm-4 col-md-2'>
+            <div class='courses'>
+                <h2 class='courseTitle'>{{course.Class + ' ' + course.Number}}</h2>
+                <h3 class='courseDetails'>{{course.Title}}</h3>
+                <p class='courseGrades'>{{course.Quarter + ' ' + course.Year}}</p>
+                <p class='courseGrades'>{{'GPA: ' + course.GPA}}
+            </div>
+        </div>
+    </div>
+</div>
