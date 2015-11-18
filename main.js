@@ -45,6 +45,9 @@ myApp.config(function($stateProvider) {
     $http.get('data/related-classes.JSON').success(function(response) {
         $scope.courseInfo = response;
     })
+    $http.get('data/non-related.JSON').success(function(response) {
+        $scope.otherInfo = response;
+    })
 })
 
 .controller('CVController', function($scope) {

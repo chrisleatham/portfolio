@@ -1,0 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:600);
+
+#title {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#navbarText {
+	font-family: 'Raleway';
+	font-size: 4em;
+	padding: 30em 30em 30em 30em 30em 30em;
+}
+
+#navbarText a {
+	color: black;
+}

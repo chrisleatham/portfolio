@@ -7,7 +7,15 @@
                 <h2 class='courseTitle'>{{course.Class + ' ' + course.Number}}</h2>
                 <h3 class='courseDetails'>{{course.Title}}</h3>
                 <p class='courseGrades'>{{course.Quarter + ' ' + course.Year}}</p>
-                <p class='courseGrades'>{{'GPA: ' + course.GPA}}
+                <p class='courseGrades'>{{'GPA: ' + course.GPA}}</p>
+            </div>
+        </div>
+        <div ng-repeat='course in otherInfo' class='course col-xs-6 col-sm-4 col-md-2'>
+            <div class='courses'>
+                <h2 class='courseTitle'>{{course.Class + ' ' + course.Number}}</h2>
+                <h3 class='courseDetails'>{{course.Title}}</h3>
+                <p class='courseGrades'>{{course.Quarter + ' ' + course.Year}}</p>
+                <p class='courseGrades'>{{'GPA: ' + course.GPA}}</p>
             </div>
         </div>
     </div>
