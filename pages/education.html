@@ -1,5 +1,15 @@
 <div class='container' id='schoolDiv'>
-    <h1>Education</h1>
+    <h1 id='label'>Education</h1>
+    <div>
+        <h2>General</h2>
+        <div id='general'>
+            <ul>
+                <li>3.47 GPA</li>
+                <li>Graduation: June 2017</li>
+                <li>Dean's List: Winter 2014, Spring 2014, Winter 2015</li>
+            </ul>
+        </div>
+    </div>
     <h1>Related Classes</h1>
     <div class='row' id='classes'>
         <div ng-repeat='course in courseInfo' class='course col-xs-6 col-sm-4 col-md-2'>
@@ -10,6 +20,9 @@
                 <p class='courseGrades'>{{'GPA: ' + course.GPA}}</p>
             </div>
         </div>
+    </div>
+    <h1> Other Classes </h1>
+    <div class='row' id='classes'>
         <div ng-repeat='course in otherInfo' class='course col-xs-6 col-sm-4 col-md-2'>
             <div class='courses'>
                 <h2 class='courseTitle'>{{course.Class + ' ' + course.Number}}</h2>
