@@ -1,0 +1,28 @@
+<div>
+	<div class='container' id='workDiv'>
+		<h1 id='label'>CV</h1>
+		<div>
+			<h2>Work Experience</h2>
+			<div ng-repeat='work in workInfo' class='col-xs-12' id='work'>
+				<h2 class='workCompany'>{{work.Company}}</h2>
+				<h3 class='workPosition'>{{work.Position}}</h3>
+				<p class='workDescription'>{{work.Description}}</p>
+				<p class='workLocation'>{{work.Where}}</p>
+				<p class='workDate'>{{work.When}}</p>
+				<img class='img-responsive' src='../img/divide.jpeg'>
+			</div>
+		</div>
+	</div>
+	<div class='container' id='activityDiv'>
+		<h2>Activities</h2>
+		<div ng-repeat='activity in activityInfo' class='col-xs-12' id='work'>
+			<h2 class='activityAct'>{{activity.Activity}}</h2>
+			<h3 class='activityTitle'>{{activity.Title}}</h3>
+			<p class='activityDescription'>{{activity.Description}}</p>
+			<p class='activityLocation'>{{activity.Where}}</p>
+			<p class='activityDate'>{{activity.When}}</p>
+			<img class='img-responsive' src='../img/divide.jpeg'>
+
+		</div>
+	</div>
+</div>
