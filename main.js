@@ -50,8 +50,13 @@ myApp.config(function($stateProvider) {
     })
 })
 
-.controller('CVController', function($scope) {
-
+.controller('CVController', function($scope, $http) {
+    $http.get('data/work.JSON').success(function(response) {
+        $scope.workInfo = response;
+    })
+    $http.get('data/activity.JSON').success(function(response) {
+        $scope.activityInfo = response;
+    })
 })
 
 .controller('ProjectsController', function($scope) {
