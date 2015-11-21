@@ -6,10 +6,25 @@
 	margin-right: auto;
 }
 
+.navbar-header {
+    margin: 0 auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.nav a {
+    display:inline-block;
+}
+
 #navbarText {
 	font-family: 'Raleway';
-	font-size: 4em;
-	padding: 30em 30em 30em 30em 30em 30em;
+	font-size: 2em;
+    text-align: center;
 }
 
 #navbarText a {
@@ -23,7 +38,38 @@
     margin-right: auto;
 }
 
-ul {
+#school {
     list-style-image: url(../img/bullet.svg);
 
+}
+
+h1 {
+    text-align: center;
+    font-size: 4em;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3em;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2em;
+}
+
+p {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (min-width: 786px) {
+    #navbarText {
+        font-size: 4em;
+    }
 }
