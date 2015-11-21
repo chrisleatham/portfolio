@@ -16,9 +16,9 @@ myApp.config(function($stateProvider) {
         templateUrl: 'pages/education.html',
         controller: 'EducationController',
     })
-    .state('cv', {
-        url: '/cv',
-        templateUrl: 'pages/cv.html',
+    .state('CV', {
+        url: '/CV',
+        templateUrl: 'pages/CV.html',
         controller: 'CVController',
     })
     .state('projects',{
