@@ -1,5 +1,6 @@
 var myApp = angular.module('myApp', ['ui.router']);
 
+//Controllers for each page
 myApp.config(function($stateProvider) {
     $stateProvider.state('home', {
         url: '/',
@@ -41,6 +42,7 @@ myApp.config(function($stateProvider) {
 
 })
 
+//Reading in JSONS for classes
 .controller('EducationController', function($scope, $http) {
     $http.get('data/related-classes.JSON').success(function(response) {
         $scope.courseInfo = response;
@@ -50,6 +52,7 @@ myApp.config(function($stateProvider) {
     })
 })
 
+//Reading in JSONS for work
 .controller('CVController', function($scope, $http) {
     $http.get('data/work.JSON').success(function(response) {
         $scope.workInfo = response;
